@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HydroSync</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background-image: url('bb.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    
+    /* HEADER SECTION */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0077ff;
+    }
+    
+    .nav a {
+      color: blue;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    .nav a:hover {
+      color:#0E3E55;
+    }
+ .cta-btn {
+      display: inline-block;
+      background: #0077ff;
+      color: #fff;
+      padding: 12px 28px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    
+    .cta-btn:hover {
+      background: #0055cc;
+    }
+    
+    .small-btn {
+      padding: 8px 18px;
+      font-size: 0.9rem;
+    }
+    
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 5%;
+      min-height: 70vh;
+    }
+    
+    .hero-content {
+      flex: 1;
+      padding-right: 5%;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #e0e8ff;
+    }
+    
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .bottle-graphic {
+      width: 300px;
+      height: 510px;
+      background-image: url('new.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 40px;
+      border: 4px outset #444;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+    
+    /* FEATURES SECTION */
+    .features {
+      padding: 80px 5%;
+      text-align: center;
+      background: #ffffff;
+    }
+    
+    .features h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #111;
+    }
+    
+    .feature-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    
+    .feature-card {
+      flex: 1;
+      padding: 30px;
+      background: #f4f8fc;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,119,255,0.1);
+    }
+    
+    .feature-card h3 {
+      margin-bottom: 15px;
+      color: #0077ff;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 5%;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    
+    .footer-links a {
+      color: #aaa;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: #fff;
+    }
+    
+ 
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+      }
+      
+      .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+      }
+      
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      
+      .feature-grid {
+        flex-direction: column;
+      }
+      
+      .header {
+        padding: 15px 5%;
+      }
+      
+      .nav {
+        display: none; /* Hides menu links on smaller phone viewports */
+      }
+      
+      .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+      
+      .footer-links a {
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+  <header class="header">
+    <div class="logo">💧 HydroSync</div>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#specs">Specs</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <a href="#buy" class="cta-btn small-btn">Shop Now</a>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlock Your Peak Performance</h1>
+      <p>The smart water bottle that tracks your intake, syncs with your fitness wearables, and reminds you exactly when to hydrate.</p>
+      <a href="#buy" class="cta-btn">Pre-Order Today</a>
+    </div>
+    <div class="hero-image">
+      <div class="bottle-graphic"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <h2>Engineered for Elite Athletes</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Smart Sync</h3>
+        <p>Connects instantly to Apple Health, Garmin, and Fitbit to calibrate hydration goals based on your daily workouts.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Glow Reminders</h3>
+        <p>Built-in LED base glows gently throughout the day, ensuring you never fall behind on your fluid metrics.</p>
+      </div>
+      <div class="feature-card">
+        <h3>24hr Insulation</h3>
+        <p>Double-walled vacuum sealed stainless steel keeps your water ice-cold for a full 24 hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div>&copy; 2026 HydroSync Inc. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Service</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </footer>
+
+</body>
+</html>
